@@ -92,22 +92,7 @@ app.post("/login", login);
 /* register api */
 app.post("/register", register);
 
-// function checkUserAndGenerateToken(data, req, res) {
-//   jwt.sign({ user: data.username, id: data._id }, 'shhhhh11111', { expiresIn: '1d' }, (err, token) => {
-//     if (err) {
-//       res.status(400).json({
-//         status: false,
-//         errorMessage: err,
-//       });
-//     } else {
-//       res.json({
-//         message: 'Login Successfully.',
-//         token: token,
-//         status: true
-//       });
-//     }
-//   });
-// }
+
 
 /* Api to add Product */
 app.post("/add-task", addTask);
