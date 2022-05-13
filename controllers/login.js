@@ -1,4 +1,6 @@
-var user = require("../model/user");
+const user = require("../model/user");
+const jwt = require('jsonwebtoken');
+const bcrypt = require('bcrypt');
 
 function checkUserAndGenerateToken(data, req, res) {
     jwt.sign({ user: data.username, id: data._id }, 'shhhhh11111', { expiresIn: '1d' }, (err, token) => {
