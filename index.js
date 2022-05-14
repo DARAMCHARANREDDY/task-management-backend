@@ -11,7 +11,8 @@ var app = express();
 app.use(cors());
 
 
-const mongoUri = `mongodb+srv://admin:admin@123@cluster0.popxs.mongodb.net/task-app?retryWrites=true&w=majority`;
+// const mongoUri = `mongodb+srv://admin:admin@123@cluster0.popxs.mongodb.net/task-app?retryWrites=true&w=majority`;
+const mongoUri = 'mongodb://cosmosdbsdp:mURyN3E1EzC2pNlU2rxtpXG1wUFoUREunCLexgKmqMtpYEh7hwSCl3xmwPUWE3kDa1h5ec0JIb3wYxK1ZnUD9g==@cosmosdbsdp.mongo.cosmos.azure.com:10255/?ssl=true&replicaSet=globaldb&retrywrites=false&maxIdleTimeMS=120000&appName=@cosmosdbsdp@'
 // "mongodb://cosmosdbsdp:m@cosmosdbsdp.mongo.cosmos.azure.com:10255/?ssl=true&retrywrites=false&maxIdleTimeMS=120000&appName=@cosmosdbsdp@"
 
 // connect(mongoUri, { useUnifiedTopology: true, useNewUrlParser: true });

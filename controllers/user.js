@@ -24,7 +24,7 @@ export const signUp = async (req, res) => {
         if (existingUser) return res.json({ message: "Email already exists! Please login :)" })
         if (password !== confirmpass) return res.json({ message: "Passwords doesn't match!" })
         const hashedPass = await bcrypt.hash(password, 12)
-        const result = User.create({ email, password: hashedPass })
+        const result = await User.create({ email, password: hashedPass })
         const token = jwt.sign({ email: result.email, id: result._id }, SECRET, { expiresIn: "1h" })
         res.status(201).json({ result, token })
     } catch (err) {
