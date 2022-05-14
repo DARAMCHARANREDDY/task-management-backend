@@ -1,11 +1,12 @@
 {
-  "name": "product_api",
+  "name": "task_api",
   "version": "1.0.0",
-  "description": "Api for product",
-  "main": "server.js",
+  "description": "Api for Task Management",
+  "type": "module",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "start": "node index.js"
   },
   "keywords": [
     "movie"
