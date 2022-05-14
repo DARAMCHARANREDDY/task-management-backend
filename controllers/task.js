@@ -14,7 +14,7 @@ export const createTask = async (req, res) => {
     const task = new Task({ ...req.body, date: new Date().toISOString(), creator: req.userId });
     try {
         await task.save();
-        res.status(201).json(post)
+        res.status(201).json(task)
     } catch (err) {
         res.status(409).json({ message: err.message })
     }
